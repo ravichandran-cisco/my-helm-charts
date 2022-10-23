@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zabbix
+  labels:
+    app: snmp
+spec:
+  selector:
+    matchLabels:
+      app: snmp
+  replicas: 1
+  template:
+    metadata:
+      name: zabbix-pod
+      labels:
+        app: snmp
+    spec:
+      containers:
+      - name: zabbix
+        image: zabbix/zabbix-snmptraps:latest
+        resources:
+          limits:
+            memory: 2000Mi
+          requests:
+            memory: 2000Mi
+        env:
+        ports:
+        - name: snmp
+          containerPort: 162
+          protocol: UDP

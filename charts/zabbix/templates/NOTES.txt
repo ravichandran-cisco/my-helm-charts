@@ -1,0 +1,4 @@
+k exec -it <pod-name> -- bash
+(or)
+oc exec -it <pod-name> -- bash
+

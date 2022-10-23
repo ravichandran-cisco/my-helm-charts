@@ -1,0 +1,5 @@
+Fortiweb CLI can be accessed using ssh:
+
+ssh admin@your-host-ip -p 30001
+Password is Cisco123
+

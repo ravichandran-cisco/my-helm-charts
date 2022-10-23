@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-fortiweb-dep
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app: firewall
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: {{ .Release.Name }}
+      app: firewall
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      name: {{ .Release.Name }}-fortiweb-pod
+      labels:
+        app.kubernetes.io/instance: {{ .Release.Name }}
+        app: firewall
+    spec:
+      containers:
+      - name: fortiweb
+        image: {{ .Values.image.repository }}
+        resources:
+          limits:
+            memory: 1000Mi
+          requests:
+            memory: 1000Mi
+        securityContext:
+          capabilities:
+            add: ["NET_ADMIN","NET_RAW"]
+        env:
+        - name: FWB_ADMIN_PASSWORD
+          value: "Cisco123"
+        - name: FWB_HTTPS_PORT
+          value: "8443"
+        ports:
+        - containerPort: 8
+        - containerPort: 43
+        - containerPort: 22
+        - containerPort: 9
+        - containerPort: 80
+        - containerPort: 443

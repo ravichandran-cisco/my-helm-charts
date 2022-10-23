@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zabbix-svc
+spec:
+  selector:
+    app: snmp
+  type: NodePort
+  ports:
+  - targetPort: 162
+    name: snmp
+    port: 1162
+    nodePort: 30002
+

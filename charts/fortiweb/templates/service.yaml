@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-fortiweb-svc
+  labels:
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app: firewall
+spec:
+  selector:
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app: firewall
+  type: NodePort
+  ports:
+  - name: https
+    targetPort: 43
+    port: 8443
+    nodePort: 30000
+  - name: ssh
+    targetPort: 22
+    port: 8022
+    nodePort: 30001
