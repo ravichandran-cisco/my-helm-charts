@@ -1,0 +1,62 @@
+apiVersion: v1
+entries:
+  fortiweb:
+  - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2022-10-23T15:54:01.28132+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 9ceec5ec576980d049db9289a3d0996bcf5b4baf0fdb8cb44c0b3f09e35a3cc8
+    name: fortiweb
+    type: application
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/fortiweb-1.0.0/fortiweb-1.0.0.tgz
+    version: 1.0.0
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 14.5.0
+    created: "2022-10-23T15:54:01.611634+08:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 8e8cb31362b282886241c6ce5b49b2a2746196ecb162616c3affcbdd89bdfba7
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/postgresql-11.8.1/postgresql-11.8.1.tgz
+    version: 11.8.1
+  zabbix:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-23T15:54:01.92408+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 4dfb0f7074533652e5616542a5835103565dfc58207e5ed3b6127279692e296c
+    name: zabbix
+    type: application
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-23T15:54:01.924103+08:00"
