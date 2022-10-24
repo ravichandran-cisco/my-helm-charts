@@ -18,7 +18,7 @@ cnrLic: "/license/pnr.lic"
 cnrccmPort: "1244"
 
 image:
-  repository: containers.cisco.com/nso-core-function-pack/cpnr-regional
+  repository: docker.io/osimail/cpnr-regional
   tag: 11.1
   pullPolicy: IfNotPresent
 

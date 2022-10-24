@@ -22,7 +22,7 @@ cnrDnsport: 53
 cnrHttpsport: 8443
 
 image:
-  repository: containers.cisco.com/nso-core-function-pack/cpnr-local
+  repository: docker.io/osimail/cpnr-local
   tag: 11.1
   pullPolicy: IfNotPresent
 
