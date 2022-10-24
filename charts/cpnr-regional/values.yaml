@@ -1,0 +1,47 @@
+# Default values for helm-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# TODOs
+# Leverage LoadBalancer Service
+# HA Updates/Approach
+# Readiness and Liveliness probes
+# Leverage EBS/EFS Volumes
+# Optimal Resources
+# Expose additional ports
+
+replicaCount: 1
+workerNode: master1
+cnrUser: admin
+cnrPassword: changeme
+cnrLic: "/license/pnr.lic"
+cnrccmPort: "1244"
+
+image:
+  repository: containers.cisco.com/nso-core-function-pack/cpnr-regional
+  tag: 11.1
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 1000Mi
+  requests:
+    cpu: 500m
+    memory: 1000Mi
+
+service:
+  type: NodePort
+  webui:
+    targetPort: 8453
+    internalPort: 8453
+
+persistenceStorage:
+  enabled: false
+  dataStorageClass: manual
+  dataAccessMode: ReadWriteOnce
+  dataSize: 10Gi
+  dataVolumeSource: ""

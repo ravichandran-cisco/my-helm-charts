@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "cpnr-local.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "cpnr-local.name" . }}
+    helm.sh/chart: {{ include "cpnr-local.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.webui.internalPort }}
+      targetPort: {{ .Values.service.webui.targetPort }}
+      protocol: TCP
+      name: webui
+  selector:
+    app.kubernetes.io/name: {{ include "cpnr-local.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}

@@ -1,0 +1,40 @@
+INCREMENT base-system cisco 8.1 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>1</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>1</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=73FFA2DC4ADA
+INCREMENT base-cdns-ct cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>6</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>2</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=B08A0DF41DB6
+INCREMENT base-system cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>6</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>3</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=A15209B2D530
+INCREMENT base-cdns cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>6</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>4</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=74A16EBC3802
+INCREMENT base-dhcp-ct cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>5</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=65A8A8086CFC
+INCREMENT base-dhcp cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2000</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>6</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=BEA9BA7828E2
+INCREMENT base-system cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>7</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=B608ECF2B81A
+INCREMENT base-dns-ct cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>8</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=157B377CBB94
+INCREMENT base-system cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>9</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=A3EB0ECCD214
+INCREMENT base-dns cisco 11 12-jan-2023 uncounted \
+	VENDOR_STRING=<Count>2000</Count> HOSTID=ANY \
+	NOTICE="<LicFileID>20220711190928665</LicFileID><LicLineID>10</LicLineID> \
+	<PAK></PAK><CompanyName></CompanyName>" SIGN=F098561E3F4E
