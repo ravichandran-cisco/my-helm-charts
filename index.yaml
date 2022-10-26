@@ -1,5 +1,25 @@
 apiVersion: v1
 entries:
+  busybox:
+  - apiVersion: v1
+    created: "2022-10-26T19:35:34.638178+08:00"
+    description: A utility chart to verify clusters and processes
+    digest: b1173663d0229877486bed75b6cb0a004084219a12559da7c3fdb904095b504f
+    home: https://www.busybox.net/
+    icon: https://www.busybox.net/images/busybox1.png
+    keywords:
+    - busybox
+    - testing
+    - sanity check
+    - network
+    - connectivity
+    maintainers:
+    - email: john.felten@gmail.com
+      name: John Felten
+    name: busybox
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/busybox-0.1.0/busybox-0.1.0.tgz
+    version: 0.1.0
   cpnr-local:
   - apiVersion: v1
     appVersion: 0.0.1
@@ -79,4 +99,4 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-24T19:13:04.897933+08:00"
+generated: "2022-10-26T19:35:36.154867+08:00"
