@@ -20,6 +20,16 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/busybox-0.1.0/busybox-0.1.0.tgz
     version: 0.1.0
+  cirros-vm:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-30T14:56:18.2281+08:00"
+    description: A Helm chart for KubeVirt which deploys cirros vm
+    digest: b88d5df09d6d90f9970e9d9d0e4b8f916a0ace69c3fa628287dfe8f92f23a4d5
+    name: cirros-vm
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/cirros-vm-0.1.0/cirros-vm-0.1.0.tgz
+    version: 0.1.0
   cpnr-local:
   - apiVersion: v1
     appVersion: 0.0.1
@@ -99,4 +109,4 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-26T19:35:36.154867+08:00"
+generated: "2022-11-30T14:56:19.738455+08:00"
