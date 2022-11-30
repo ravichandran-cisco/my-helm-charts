@@ -1,0 +1,43 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachineInstance
+metadata:
+  creationTimestamp: null
+  labels:
+    special: {{ include "single-vm.name" . }}
+    helm.sh/chart: {{ include "single-vm.chart" . }}
+    vm.kubevirt.io/instance: {{ .Release.Name }}
+    vm.kubevirt.io/managed-by: {{ .Release.Service }}
+  name: {{ include "single-vm.name" . }}
+spec:
+  domain:
+    devices:
+      disks:
+      - disk:
+          bus: virtio
+        name: registryvolume
+      - disk:
+          bus: virtio
+        name: cloudinitvolume
+      interfaces:
+      - name: default
+        bridge: {}
+    machine:
+      type: ""
+    resources:
+      requests:
+        memory: {{ .Values.resources.requests.memory }}
+  networks:
+  - name: default
+    pod: {}
+  terminationGracePeriodSeconds: 0
+  volumes:
+  - name: registryvolume
+    containerDisk:
+      image: "{{ .Values.image.repository }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
+  - cloudInitNoCloud:
+      userData: |-
+        #!/bin/sh
+
+        echo "printed from cloud-init userdata"
+    name: cloudinitvolume
+status: {}
