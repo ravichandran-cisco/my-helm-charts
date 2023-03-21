@@ -98,6 +98,17 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/postgresql-11.8.1/postgresql-11.8.1.tgz
     version: 11.8.1
+  xrd-cp:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-03-21T20:19:37.856216+08:00"
+    description: XRd Base Chart
+    digest: c4a62abc98a307efef6c1f25b1162e930ce434a3671051626cdf2e797b2dc533
+    name: xrd-cp
+    type: application
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/xrd-cp-0.7.0/xrd-cp-0.7.0.tgz
+    version: 0.7.0
   zabbix:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -109,4 +120,4 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-30T14:56:19.738455+08:00"
+generated: "2023-03-21T20:19:38.130904+08:00"
