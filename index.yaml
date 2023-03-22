@@ -50,6 +50,17 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/cpnr-regional-0.0.1/cpnr-regional-0.0.1.tgz
     version: 0.0.1
+  fortimanager:
+  - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2023-03-22T22:40:31.807132+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 0c52a2d6bb43147318abb2bf7f8984ed98bd7f379d82503c9a71ad5036233f9b
+    name: fortimanager
+    type: application
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/fortimanager-1.0.0/fortimanager-1.0.0.tgz
+    version: 1.0.0
   fortiweb:
   - apiVersion: v2
     appVersion: 1.16.1
@@ -120,4 +131,4 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-21T20:19:38.130904+08:00"
+generated: "2023-03-22T22:40:33.419555+08:00"
