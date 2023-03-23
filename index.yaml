@@ -112,6 +112,16 @@ entries:
   xrd-cp:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-03-23T13:40:30.054608+08:00"
+    description: XRd Base Chart
+    digest: 571071ee01669c022edce3f95ee15ebc37b7c3a5f4ec272ded1392a80ab50447
+    name: xrd-cp
+    type: application
+    urls:
+    - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/xrd-cp-0.7.2/xrd-cp-0.7.2.tgz
+    version: 0.7.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2023-03-23T13:19:54.534174+08:00"
     description: XRd Base Chart
     digest: c7747b53df78cce1f5fe2b85519d9a9d1501e1fb54a566b1f0062f62ec96fa28
@@ -141,4 +151,4 @@ entries:
     urls:
     - https://github.com/ravichandran-cisco/my-helm-charts/releases/download/zabbix-0.1.0/zabbix-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-23T13:19:54.811841+08:00"
+generated: "2023-03-23T13:40:30.780681+08:00"
